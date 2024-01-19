@@ -1,0 +1,6 @@
+pilitadibuja/__pycache__
+pilitadibuja/settings/__pycache__
+apps/shop/__pycache__
+apps/shop/migrations/*
+apps/shop/__init__.py
+
