@@ -23,6 +23,6 @@ from apps.shop import urls as shop_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(shop_urls)),
+    path('shop/', include(shop_urls)),
     path('', views.index, name='index'),
 ]+ static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
