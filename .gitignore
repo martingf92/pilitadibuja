@@ -3,4 +3,5 @@ pilitadibuja/settings/__pycache__
 apps/shop/__pycache__
 apps/shop/migrations/*
 apps/shop/__init__.py
-
+venv/
+*__pycache__*

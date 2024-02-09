@@ -1,1 +1,40 @@
-hola mundo
+Hola Pilita este es el comienzo de tu projecto *_*
+
+<!-- categoria_lista.html -->
+<html>
+<head>
+    <!-- Agrega aquí las referencias a tus estilos y scripts, incluyendo Bootstrap si lo estás usando -->
+</head>
+<body>
+
+<!-- Botón para abrir el modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#categoriasModal">
+    Ver Categorías
+</button>
+
+<!-- Modal de Categorías -->
+<div class="modal fade" id="categoriasModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Categorías Disponibles</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Mostrar las categorías aquí -->
+                {% for categoria in categorias %}
+                    <p>{{ categoria.nombre }}</p>
+                {% endfor %}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Agrega aquí tus scripts, incluyendo jQuery y Bootstrap si es necesario -->
+</body>
+</html>
